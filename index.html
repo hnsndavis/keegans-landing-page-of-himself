@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keegan Hansen-Davis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+            </div>
+            <div class="terminal-title">keegan@future:~$</div>
+        </div>
+        
+        <div class="terminal-body">
+            <div class="prompt-line">
+                <span class="prompt">keegan@future:~$</span>
+                <span class="command" id="typewriter">whoami</span>
+                <span class="cursor">|</span>
+            </div>
+            
+            <div class="output" id="output">
+                <div class="identity">
+                    <h1 class="name glitch" data-text="KEEGAN HANSEN-DAVIS">KEEGAN HANSEN-DAVIS</h1>
+                    <div class="roles">
+                        <span class="role active" data-role="minimalist">MINIMALIST</span>
+                        <span class="role" data-role="futurist">FUTURIST</span>
+                        <span class="role" data-role="thinker">THINKER</span>
+                        <span class="role" data-role="writer">WRITER</span>
+                        <span class="role" data-role="designer">DESIGNER</span>
+                    </div>
+                </div>
+                
+                <div class="bio">
+                    <p>Helping builders, dreamers, and ordinary people move from stuck to doing the thing.</p>
+                </div>
+                
+                <div class="actions">
+                    <div class="action-item" data-action="newsletter">
+                        <span class="action-prompt">$</span>
+                        <span class="action-command">./notes_from_keegan.sh</span>
+                        <span class="action-desc">Weekly newsletter • Stories & lessons for doers</span>
+                    </div>
+                    
+                    <div class="action-item" data-action="writing">
+                        <span class="action-prompt">$</span>
+                        <span class="action-command">cat recent_thoughts.md</span>
+                        <span class="action-desc">Latest essays & explorations</span>
+                    </div>
+                    
+                    <div class="action-item" data-action="connect">
+                        <span class="action-prompt">$</span>
+                        <span class="action-command">ssh keegan@contact</span>
+                        <span class="action-desc">Connect via email or social</span>
+                    </div>
+                    
+                    <div class="action-item" data-action="work">
+                        <span class="action-prompt">$</span>
+                        <span class="action-command">ls projects/</span>
+                        <span class="action-desc">Current work & collaborations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <button class="modal-close" id="modal-close">×</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

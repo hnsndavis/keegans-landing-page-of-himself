@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #000;
+    color: #00ff00;
+    line-height: 1.4;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminal {
+    width: 90vw;
+    max-width: 800px;
+    background: #111;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 255, 0, 0.1);
+    border: 1px solid #333;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+}
+
+.terminal-header {
+    background: #222;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.control.close { background: #ff5f57; }
+.control.minimize { background: #ffbd2e; }
+.control.maximize { background: #28ca42; }
+
+.terminal-title {
+    flex: 1;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    font-family: 'Times New Roman', serif;
+}
+
+.terminal-body {
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Times New Roman', serif;
+}
+
+.prompt-line {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.prompt {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.command {
+    color: #fff;
+    font-weight: normal;
+}
+
+.cursor {
+    color: #00ff00;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.output {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.identity {
+    margin-bottom: 30px;
+}
+
+.name {
+    font-size: clamp(24px, 5vw, 42px);
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: 'Times New Roman', serif;
+}
+
+.glitch {
+    position: relative;
+    display: inline-block;
+}
+
+.glitch:hover:before,
+.glitch:hover:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch:hover:before {
+    animation: glitch-anim-1 0.3s infinite linear alternate-reverse;
+    color: #ff0000;
+    z-index: -1;
+}
+
+.glitch:hover:after {
+    animation: glitch-anim-2 0.3s infinite linear alternate-reverse;
+    color: #00ffff;
+    z-index: -2;
+}
+
+@keyframes glitch-anim-1 {
+    0% { clip: rect(42px, 9999px, 44px, 0); }
+    25% { clip: rect(12px, 9999px, 59px, 0); }
+    50% { clip: rect(85px, 9999px, 140px, 0); }
+    75% { clip: rect(31px, 9999px, 33px, 0); }
+    100% { clip: rect(63px, 9999px, 95px, 0); }
+}
+
+@keyframes glitch-anim-2 {
+    0% { clip: rect(65px, 9999px, 95px, 0); }
+    25% { clip: rect(31px, 9999px, 33px, 0); }
+    50% { clip: rect(85px, 9999px, 140px, 0); }
+    75% { clip: rect(12px, 9999px, 59px, 0); }
+    100% { clip: rect(42px, 9999px, 44px, 0); }
+}
+
+.roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.role {
+    padding: 6px 12px;
+    border: 1px solid #333;
+    color: #666;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+.role.active,
+.role:hover {
+    border-color: #00ff00;
+    color: #00ff00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.bio {
+    margin-bottom: 30px;
+    color: #ccc;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Times New Roman', serif;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 2px solid transparent;
+    padding-left: 12px;
+}
+
+.action-item:hover {
+    border-left-color: #00ff00;
+    background: rgba(0, 255, 0, 0.05);
+    transform: translateX(8px);
+}
+
+.action-prompt {
+    color: #00ff00;
+    font-weight: bold;
+    min-width: 20px;
+}
+
+.action-command {
+    color: #fff;
+    font-weight: bold;
+    min-width: 160px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+}
+
+.action-desc {
+    color: #888;
+    font-size: 13px;
+    font-family: 'Times New Roman', serif;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #111;
+    margin: 10% auto;
+    padding: 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    color: #00ff00;
+    font-family: 'Times New Roman', serif;
+}
+
+.modal-header {
+    background: #222;
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    color: #fff;
+}
+
+.modal-body {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.modal-body a {
+    color: #00ff00;
+    text-decoration: none;
+    border-bottom: 1px solid #00ff00;
+}
+
+.modal-body a:hover {
+    background: rgba(0, 255, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .terminal {
+        width: 95vw;
+        margin: 20px auto;
+    }
+    
+    .terminal-body {
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .name {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    
+    .roles {
+        justify-content: center;
+    }
+    
+    .action-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .action-command {
+        min-width: auto;
+    }
+    
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
