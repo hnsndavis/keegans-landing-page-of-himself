@@ -62,7 +62,7 @@ export default function KeeganLanding() {
                 I'm passionate about making business growth practical and people-driven — especially within service organizations ready for their next chapter. Whether building small teams or architecting change, my focus is always on building what lasts.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Founder of <a href="https://weblaunchlab.com/" className="text-blue-600 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">Web Launch Lab</a>. Currently exploring partnership and leadership opportunities with values-driven teams, holding companies, or founders serious about lasting impact.
+                Founder of <a href="https://weblaunchlab.com/" className="text-blue-600 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">WebLaunch Lab</a>. Currently exploring partnership and leadership opportunities with values-driven teams, holding companies, or founders serious about lasting impact.
               </p>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function KeeganLanding() {
                 </p>
                 <div className="ml-6 space-y-4">
                   <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-gray-900 mb-2">Web Launch Lab</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2">WebLaunch Lab</h4>
                     <p className="text-gray-600">Productized service offering strategic web design and business development solutions for service-based organizations.</p>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -181,7 +181,7 @@ export default function KeeganLanding() {
                 Newsletter
               </a>
               <a href="https://weblaunchlab.com/" className="text-gray-600 hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
-                Web Launch Lab
+                WebLaunch Lab
               </a>
             </div>
             <p className="text-gray-500 text-sm">
