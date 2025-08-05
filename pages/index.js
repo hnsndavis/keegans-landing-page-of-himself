@@ -31,7 +31,7 @@ export default function KeeganLanding() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Business Builder &<br />
-              <span className="text-blue-600">Community Founder</span>
+              <span className="bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent">Community Founder</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Equipping teams and founders to unlock growth, improve operations, and build lasting value in service-driven businesses.
@@ -40,10 +40,10 @@ export default function KeeganLanding() {
               Helping visionaries win in the real world — one system, one story at a time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="mailto:keeganhnsndavis@gmail.com" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+              <a href="mailto:keeganhnsndavis@gmail.com" className="bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200">
                 Let's Work Together
               </a>
-              <a href="#looking-for" className="border border-gray-300 hover:border-gray-400 text-gray-700 px-8 py-4 rounded-lg font-semibold transition-colors">
+              <a href="#looking-for" className="border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 px-8 py-4 rounded-lg font-semibold transition-colors">
                 Partnership Opportunities
               </a>
             </div>
@@ -73,12 +73,22 @@ export default function KeeganLanding() {
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Experience</h2>
             <div className="space-y-8">
-              <div className="border-l-4 border-blue-600 pl-8">
-                <div className="text-blue-600 font-semibold text-lg mb-2">2023 – Present</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Founder, Web Launch Lab</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Building a community-driven platform that combines web design expertise with practical business growth strategies. Helping service-based businesses establish their digital presence while creating lasting value through systems and storytelling.
+              <div className="border-l-4 border-gray-400 pl-8">
+                <div className="text-gray-600 font-semibold text-lg mb-2">2023 – Present</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Founder, HNSN Digital</h3>
+                <p className="text-lg text-gray-600 leading-relaxed mb-4">
+                  Media holding company focused on building sustainable, service-driven businesses through strategic operations and community-centered growth.
                 </p>
+                <div className="ml-6 space-y-4">
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-gray-900 mb-2">Web Launch Lab</h4>
+                    <p className="text-gray-600">Productized service offering strategic web design and business development solutions for service-based organizations.</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-gray-900 mb-2">NowGen Labs</h4>
+                    <p className="text-gray-600">Community-driven platform connecting entrepreneurs and business builders through shared resources, insights, and collaborative growth opportunities.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -118,7 +128,7 @@ export default function KeeganLanding() {
             <h3 className="text-2xl font-semibold text-gray-800 mb-12">Let's Build Lasting Value, Together.</h3>
             
             <div className="mb-16">
-              <a href="mailto:keeganhnsndavis@gmail.com" className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg">
+              <a href="mailto:keeganhnsndavis@gmail.com" className="inline-flex items-center bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 text-lg">
                 Email me
               </a>
               <p className="text-gray-600 mt-4">keeganhnsndavis@gmail.com</p>
@@ -130,12 +140,27 @@ export default function KeeganLanding() {
         <section className="py-20 bg-gray-50">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Newsletter / Community</h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-xl text-gray-700 mb-12">
               Want to go deeper? Get my latest thoughts and stories here:
             </p>
-            <a href="https://keeganhansendavis.substack.com/" className="inline-flex items-center bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg" target="_blank" rel="noopener noreferrer">
-              👉 Subscribe to Notes from Keegan
-            </a>
+            
+            <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+              <div className="bg-white p-6 rounded-lg border border-gray-200 text-left">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Notes from Keegan</h3>
+                <p className="text-gray-600 mb-4">Weekly stories, practical lessons, and real encouragement for dreamers who want to make something happen.</p>
+                <a href="https://keeganhansendavis.substack.com/" className="inline-flex items-center bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200" target="_blank" rel="noopener noreferrer">
+                  Subscribe (Free)
+                </a>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg border border-gray-200 text-left">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">The Founder's Journal</h3>
+                <p className="text-gray-600 mb-4">Deeper insights, strategic frameworks, and behind-the-scenes founder perspectives for serious business builders.</p>
+                <a href="https://keeganhansendavis.substack.com/" className="inline-flex items-center border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors" target="_blank" rel="noopener noreferrer">
+                  Get Founder Insights
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
