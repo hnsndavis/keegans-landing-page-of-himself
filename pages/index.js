@@ -37,7 +37,7 @@ export default function KeeganLanding() {
               Equipping teams and founders to unlock growth, improve operations, and build lasting value in service-driven businesses.
             </p>
             <p className="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
-              Helping visionaries win in the real world — one system, one story at a time.
+              Helping visionaries win in the real world - one system, one story at a time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="mailto:keeganhnsndavis@gmail.com" className="bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-900 hover:to-black text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200">
@@ -59,7 +59,7 @@ export default function KeeganLanding() {
                 With foundations in digital and operational strategy, I help founders and teams advance from uncertainty to clarity. My approach blends systems thinking and a knack for storytelling to create traction where others see complexity.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                I'm passionate about making business growth practical and people-driven — especially within service organizations ready for their next chapter. Whether building small teams or architecting change, my focus is always on building what lasts.
+                I'm passionate about making business growth practical and people-driven - especially within service organizations ready for their next chapter. Whether building small teams or architecting change, my focus is always on building what lasts.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Founder of <a href="https://weblaunchlab.com/" className="text-blue-600 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">WebLaunch Lab</a>. Currently exploring partnership and leadership opportunities with values-driven teams, holding companies, or founders serious about lasting impact.
