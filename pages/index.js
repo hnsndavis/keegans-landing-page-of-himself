@@ -156,7 +156,7 @@ export default function KeeganLanding() {
               <div className="bg-white p-6 rounded-lg border border-gray-200 text-left">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">The Founder's Journal</h3>
                 <p className="text-gray-600 mb-4">Deeper insights, strategic frameworks, and behind-the-scenes founder perspectives for serious business builders.</p>
-                <a href="https://keeganhansendavis.substack.com/" className="inline-flex items-center border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href="https://keeganhansendavis.substack.com/p/the-founders-journal" className="inline-flex items-center border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors" target="_blank" rel="noopener noreferrer">
                   Get Founder Insights
                 </a>
               </div>
