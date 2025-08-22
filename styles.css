@@ -181,13 +181,16 @@ header .container {
     color: #000;
     text-decoration: none;
     font-weight: 500;
-    border-bottom: 2px solid #000;
-    padding-bottom: 2px;
-    transition: opacity 0.3s ease;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
 .venture-link:hover {
-    opacity: 0.7;
+    background-color: #000;
+    color: #fff;
 }
 
 .coming-soon {
