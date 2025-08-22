@@ -82,12 +82,12 @@
                     <div class="venture-card">
                         <h3>HNSN Digital</h3>
                         <p>Digital transformation and strategy consulting</p>
-                        <a href="https://perspectivefunnel.co/689f93c788c572003cbc098a/68a8a5f2c69030003ca27507/" target="_blank" class="venture-link">Unlock Growth</a>
+                        <button class="venture-link" onclick="openModal('hnsn-modal')">Unlock Growth</button>
                     </div>
                     <div class="venture-card">
                         <h3>WebLaunch Lab</h3>
                         <p>Fast, effective website launches for businesses and creators</p>
-                        <a href="https://perspectivefunnel.co/689f93c788c572003cbc098a/68a8cb598cd295003cc59672/" target="_blank" class="venture-link">Launch Faster</a>
+                        <button class="venture-link" onclick="openModal('weblaunch-modal')">Launch Faster</button>
                     </div>
                     <div class="venture-card">
                         <h3>NowGen Labs</h3>
@@ -112,6 +112,29 @@
         </div>
     </footer>
 
+    <!-- Modal for HNSN Digital -->
+    <div id="hnsn-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('hnsn-modal')">&times;</span>
+            <h2>HNSN Digital</h2>
+            <iframe id="ps-embed-68a8a5f2c69030003ca27507" src="https://perspectivefunnel.co/689f93c788c572003cbc098a/68a8a5f2c69030003ca27507/?embed=1&header=1&footer=1&cookieBanner=1&autoHeight=1" style="border:0;width:100%;min-height:600px;"></iframe>
+        </div>
+    </div>
+
+    <!-- Modal for WebLaunch Lab -->
+    <div id="weblaunch-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('weblaunch-modal')">&times;</span>
+            <h2>WebLaunch Lab</h2>
+            <iframe id="ps-embed-68a8cb598cd295003cc59672" src="https://perspectivefunnel.co/689f93c788c572003cbc098a/68a8cb598cd295003cc59672/?embed=1&header=1&footer=1&cookieBanner=1&autoHeight=1" style="border:0;width:100%;min-height:600px;"></iframe>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    
+    <!-- Perspective Funnel Scripts -->
+    <script>!function(t){function i(){for(var e=[],n=0;n<arguments.length;n++)e[n]=arguments[n];var t=(new Date).getTime();d<=t-s&&(s=t,o.apply(void 0,e))}var o,d,s,a=document.getElementById("ps-embed-68a8a5f2c69030003ca27507");o=function(){a&&"contentWindow"in a&&"object"==typeof a.contentWindow&&"postMessage"in a.contentWindow&&"function"==typeof a.contentWindow.postMessage&&a.contentWindow.postMessage({type:"viewportHeight",viewportHeight:Math.min(a.scrollHeight,window.innerHeight)},"*")},d=200,s=0,new ResizeObserver(i).observe(a);window.addEventListener("resize",i),window.addEventListener("message",function(e){var e=null==e?void 0:e.data,n=null==e?void 0:e.height;"embed-ready"===(null==e?void 0:e.type)&&setTimeout(i, 100),t&&a&&void 0!==n&&(a.style.height="".concat(n,"px"))})}(true);</script>
+    
+    <script>!function(t){function i(){for(var e=[],n=0;n<arguments.length;n++)e[n]=arguments[n];var t=(new Date).getTime();d<=t-s&&(s=t,o.apply(void 0,e))}var o,d,s,a=document.getElementById("ps-embed-68a8cb598cd295003cc59672");o=function(){a&&"contentWindow"in a&&"object"==typeof a.contentWindow&&"postMessage"in a.contentWindow&&"function"==typeof a.contentWindow.postMessage&&a.contentWindow.postMessage({type:"viewportHeight",viewportHeight:Math.min(a.scrollHeight,window.innerHeight)},"*")},d=200,s=0,new ResizeObserver(i).observe(a);window.addEventListener("resize",i),window.addEventListener("message",function(e){var e=null==e?void 0:e.data,n=null==e?void 0:e.height;"embed-ready"===(null==e?void 0:e.type)&&setTimeout(i, 100),t&&a&&void 0!==n&&(a.style.height="".concat(n,"px"))})}(true);</script>
 </body>
 </html>
