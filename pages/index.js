@@ -62,7 +62,7 @@ export default function KeeganLanding() {
                 I'm passionate about making business growth practical and people-driven - especially within service organizations ready for their next chapter. Whether building small teams or architecting change, my focus is always on building what lasts.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Founder of <a href="https://weblaunchlab.com/" className="text-blue-600 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">WebLaunch Lab</a>. Currently exploring partnership and leadership opportunities with values-driven teams, holding companies, or founders serious about lasting impact.
+                Founder of <a href="https://perspectivefunnel.co/689f93c788c572003cbc098a/68a8cb598cd295003cc59672/" className="text-blue-600 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">WebLaunch Lab</a>. Currently exploring partnership and leadership opportunities with values-driven teams, holding companies, or founders serious about lasting impact.
               </p>
             </div>
           </div>
@@ -75,18 +75,22 @@ export default function KeeganLanding() {
             <div className="space-y-8">
               <div className="border-l-4 border-gray-400 pl-8">
                 <div className="text-gray-600 font-semibold text-lg mb-2">2023 – Present</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Founder, HNSN Digital</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <a href="https://perspectivefunnel.co/689f93c788c572003cbc098a/68a8a5f2c69030003ca27507/" className="text-blue-600 hover:text-blue-700 transition-colors" target="_blank" rel="noopener noreferrer">Founder, HNSN Digital</a>
+                </h3>
                 <p className="text-lg text-gray-600 leading-relaxed mb-4">
                   Media holding company focused on building sustainable, service-driven businesses through strategic operations and community-centered growth.
                 </p>
                 <div className="ml-6 space-y-4">
                   <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-gray-900 mb-2">WebLaunch Lab</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2">
+                      <a href="https://perspectivefunnel.co/689f93c788c572003cbc098a/68a8cb598cd295003cc59672/" className="text-blue-600 hover:text-blue-700 transition-colors" target="_blank" rel="noopener noreferrer">WebLaunch Lab</a>
+                    </h4>
                     <p className="text-gray-600">Productized service offering strategic web design and business development solutions for service-based organizations.</p>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-gray-900 mb-2">NowGen Labs</h4>
-                    <p className="text-gray-600">Community-driven platform connecting entrepreneurs and business builders through shared resources, insights, and collaborative growth opportunities.</p>
+                    <p className="text-gray-600">Community-driven platform connecting entrepreneurs and business builders through shared resources, insights, and collaborative growth opportunities. <span className="italic text-gray-500">Coming Soon</span></p>
                   </div>
                 </div>
               </div>
@@ -180,7 +184,7 @@ export default function KeeganLanding() {
               <a href="https://keeganhansendavis.substack.com/" className="text-gray-600 hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                 Newsletter
               </a>
-              <a href="https://weblaunchlab.com/" className="text-gray-600 hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://perspectivefunnel.co/689f93c788c572003cbc098a/68a8cb598cd295003cc59672/" className="text-gray-600 hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
                 WebLaunch Lab
               </a>
             </div>
