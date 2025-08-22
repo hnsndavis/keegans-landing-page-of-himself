@@ -575,9 +575,10 @@ footer p {
     font-weight: bold;
     cursor: pointer;
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 10px;
+    right: 15px;
     line-height: 1;
+    padding: 10px;
     transition: color 0.3s ease;
 }
 
