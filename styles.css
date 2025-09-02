@@ -659,3 +659,85 @@ footer p {
         font-size: 14px;
     }
 }
+
+/* Contact Modal Styles */
+.contact-modal {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-modal h2 {
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.contact-modal > p {
+    color: #6b7280;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.consultation-benefits {
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.consultation-benefits h3 {
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.consultation-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.consultation-benefits li {
+    color: #374151;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+}
+
+.calendly-container {
+    margin-bottom: 24px;
+}
+
+.calendly-cta {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(26, 26, 26, 0.15);
+}
+
+.calendly-cta:hover {
+    background-color: #374151;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(26, 26, 26, 0.2);
+}
+
+.modal-footer-text {
+    color: #6b7280;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+}
