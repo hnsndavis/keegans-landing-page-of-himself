@@ -1,6 +1,3 @@
-const FEED_URL = 'https://keeganhansendavis.substack.com/feed';
-const CORS_PROXY = 'https://api.allorigins.win/get?url=';
-
 document.addEventListener('DOMContentLoaded', loadWriting);
 
 async function loadWriting() {
@@ -8,9 +5,9 @@ async function loadWriting() {
     if (!list) return;
 
     try {
-        const res = await fetch(`${CORS_PROXY}${encodeURIComponent(FEED_URL)}`);
-        const data = await res.json();
-        const xml = new DOMParser().parseFromString(data.contents, 'text/xml');
+        const res = await fetch('/api/feed');
+        const text = await res.text();
+        const xml = new DOMParser().parseFromString(text, 'text/xml');
         const items = Array.from(xml.querySelectorAll('item'));
 
         if (!items.length) throw new Error('No items');
