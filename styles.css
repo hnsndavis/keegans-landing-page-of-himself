@@ -7,12 +7,12 @@
 }
 
 :root {
-    --bg: #141210;
-    --text: #ccc5bb;
-    --text-dim: #7a7269;
-    --link: #b8956a;
-    --link-hover: #d4b48a;
-    --border: #2a2620;
+    --bg: #faf9f7;
+    --text: #1a1917;
+    --text-dim: #9a9590;
+    --link: #1a1917;
+    --link-hover: #555;
+    --border: #e8e4de;
 }
 
 body {
