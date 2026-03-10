@@ -1,5 +1,5 @@
-const SUBSTACK_URL = 'https://keeganhansendavis.substack.com';
-const RSS2JSON = 'https://api.rss2json.com/v1/api.json';
+const FEED_URL = 'https://keeganhansendavis.substack.com/feed';
+const CORS_PROXY = 'https://api.allorigins.win/get?url=';
 
 document.addEventListener('DOMContentLoaded', loadWriting);
 
@@ -8,28 +8,32 @@ async function loadWriting() {
     if (!list) return;
 
     try {
-        const res = await fetch(`${RSS2JSON}?rss_url=${encodeURIComponent(SUBSTACK_URL + '/feed')}`);
+        const res = await fetch(`${CORS_PROXY}${encodeURIComponent(FEED_URL)}`);
         const data = await res.json();
+        const xml = new DOMParser().parseFromString(data.contents, 'text/xml');
+        const items = Array.from(xml.querySelectorAll('item'));
 
-        if (data.status !== 'ok' || !data.items.length) throw new Error('Feed empty');
+        if (!items.length) throw new Error('No items');
 
         list.innerHTML = '';
-        data.items.forEach(item => {
+        items.slice(0, 10).forEach(item => {
+            const title = item.querySelector('title')?.textContent || '';
+            const link = item.querySelector('link')?.textContent || '#';
+            const pubDate = item.querySelector('pubDate')?.textContent || '';
+            const date = pubDate
+                ? new Date(pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+                : '';
+
             const li = document.createElement('li');
-            const date = new Date(item.pubDate).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric'
-            });
             li.innerHTML = `
-                <a href="${item.link}" target="_blank">${item.title}</a>
+                <a href="${link}" target="_blank">${title}</a>
                 <span class="writing-date">${date}</span>
             `;
             list.appendChild(li);
         });
     } catch (err) {
-        list.innerHTML = `<li style="color:var(--text-dim);font-size:15px;">
-            Could not load posts — <a href="${SUBSTACK_URL}/archive" target="_blank">read on Substack</a>.
+        list.innerHTML = `<li style="color:var(--text-dim);font-style:italic;">
+            <a href="https://keeganhansendavis.substack.com/archive" target="_blank">Read on Substack &rarr;</a>
         </li>`;
     }
 }
