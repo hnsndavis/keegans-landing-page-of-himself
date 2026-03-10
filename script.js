@@ -1,6 +1,5 @@
 const SUBSTACK_URL = 'https://keeganhansendavis.substack.com';
 const RSS2JSON = 'https://api.rss2json.com/v1/api.json';
-const POST_COUNT = 8;
 
 document.addEventListener('DOMContentLoaded', loadWriting);
 
@@ -9,7 +8,7 @@ async function loadWriting() {
     if (!list) return;
 
     try {
-        const res = await fetch(`${RSS2JSON}?rss_url=${encodeURIComponent(SUBSTACK_URL + '/feed')}&count=${POST_COUNT}`);
+        const res = await fetch(`${RSS2JSON}?rss_url=${encodeURIComponent(SUBSTACK_URL + '/feed')}`);
         const data = await res.json();
 
         if (data.status !== 'ok' || !data.items.length) throw new Error('Feed empty');
